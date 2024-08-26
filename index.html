@@ -37,21 +37,23 @@
         const button = document.querySelector("button");
         button.addEventListener("click",() => {
           const item = input.value;
-          input.value = '';
-         
-        const li = document.createElement("li");
-        const span = document.createElement("span");
-        const newbutton = document.createElement("button");
-
-        li.appendChild(span);
-        span.textContent = item;
-        li.appendChild(newbutton);
-        newbutton.textContent = "Delete";
-        ul.appendChild(li);
-        newbutton.addEventListener("click", () => {
-          ul.removeChild(li);
-        });
-        input.focus();
+          if (input.value) {
+            input.value = '';       
+          const li = document.createElement("li");
+          const span = document.createElement("span");
+          const deleteButton = document.createElement("button");
+  
+          li.appendChild(span);
+          span.textContent = item;
+          li.appendChild(deleteButton);
+          deleteButton.textContent = "Delete";
+          ul.appendChild(li);
+          deleteButton.addEventListener("click", () => {
+            ul.removeChild(li);
+          });
+          input.focus();
+          }
+      
       });
         
     </script>
