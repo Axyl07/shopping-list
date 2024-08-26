@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text color for contrast */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 2.5rem;
+    color: #ff69b4; /* Pink color for the heading */
+    margin-bottom: 20px;
+}
+
+/* Input and Button Container */
+div {
+    display: flex;
+    align-items: center; /* Centers the label with the input */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Input Field Style */
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ff69b4; /* Pink border */
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+/* Button Style */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff69b4; /* Pink button */
+    color: #1a1a1a; /* Dark text on pink button */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff85c0; /* Lighter pink on hover */
+}
+
+/* List Style */
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+li {
+    background-color: #333; /* Dark background for list items */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    flex-grow: 1;
+}
+
+/* Delete Button Style */
+li button {
+    font-size: 0.875rem;
+    padding: 5px 10px;
+    background-color: #ff69b4; /* Pink button for delete */
+    color: #1a1a1a; /* Dark text on pink button */
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background-color: #ff85c0; /* Lighter pink on hover */
+}
